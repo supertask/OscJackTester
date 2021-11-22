@@ -121,6 +121,23 @@ namespace OscJack
             _socket.Send(_encoder.Buffer, _encoder.Length, SocketFlags.None);
         }
 
+        public void Send(string address, string element1, int element2,
+            float element3, float element4, float element5, float element6, float element7)
+        {
+            _encoder.Clear();
+            _encoder.Append(address);
+            _encoder.Append(",sifffff");
+            _encoder.Append(element1);
+            _encoder.Append(element2);
+            _encoder.Append(element3);
+            _encoder.Append(element4);
+            _encoder.Append(element5);
+            _encoder.Append(element6);
+            _encoder.Append(element7);
+            _socket.Send(_encoder.Buffer, _encoder.Length, SocketFlags.None);
+        }
+
+
         #endregion
 
         #region IDispose implementation

@@ -147,12 +147,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 503645393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b7c4cc986f47584a9dac4b4502a2fd0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cfa7e4f61b1bf74e901fabc6f7a431b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  port: 10003
-  waterVolumeWall: 0.5
-  waterVolumeFloor: 0.5
+  port: 6670
+  areaId: X1
+  trackingId: 0
+  centerX: 0.5
+  centerY: 0.5
+  isStopped: 0
+  sizeWidth: 1800
+  sizeHeight: 2070
 --- !u!4 &503645395
 Transform:
   m_ObjectHideFlags: 0
@@ -257,7 +262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1377147212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,9 +272,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1377147211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b59aaf69891b2b41974dbde6280e370, type: 3}
+  m_Script: {fileID: 11500000, guid: 368e9fc1b5e0e5747b049f5968b9d1ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  port: 6670
 --- !u!4 &1377147213
 Transform:
   m_ObjectHideFlags: 0
